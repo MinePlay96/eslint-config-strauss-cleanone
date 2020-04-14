@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-strauss-cleanone",
+  "version": "1.0.0",
+  "description": "a eslint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Leon Strauß",
+    "email": "leonstrauss99@gmail.com"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
