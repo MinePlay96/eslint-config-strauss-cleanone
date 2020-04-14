@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-strauss-cleanone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a eslint configuration",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,9 @@
   "license": "ISC",
   "peerDependencies": {
     "eslint": ">= 3"
-  }
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ]
 }
