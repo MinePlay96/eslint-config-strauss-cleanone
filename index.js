@@ -19,7 +19,6 @@ module.exports = {
     "no-extra-parens": "error",
     "no-template-curly-in-string": "error",
     "array-callback-return": "error",
-    "class-methods-use-this": "error",
     "consistent-return": "error",
     "curly": "error",
     "default-param-last": "error",
