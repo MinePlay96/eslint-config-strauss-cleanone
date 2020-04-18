@@ -10,6 +10,13 @@
     "name": "Leon Strauß",
     "email": "leonstrauss99@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MinePlay96/eslint-config-strauss-cleanone"
+  },
+  "files": [
+    "./index.js"
+  ],
   "license": "ISC",
   "peerDependencies": {
     "eslint": ">= 3"
