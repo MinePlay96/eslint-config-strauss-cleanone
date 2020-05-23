@@ -92,13 +92,13 @@ module.exports = {
     "no-path-concat": "error",
     "no-process-env": "error",
     "no-sync": "error",
-    "array-bracket-newline": ["error", { "minItems": 4 }], // TODO: change to min items xxx
-    "array-bracket-spacing": ["error", "always", { 
+    "array-bracket-newline": ["warn", { "minItems": 3 }], // TODO: change to min items xxx
+    "array-bracket-spacing": ["warn", "always", { 
       "singleValue": false, 
       "arraysInArrays": false, 
       "objectsInArrays": false 
     }],
-    "array-element-newline": ["error", { "minItems": 4 }], // TODO: change to min items xxx,
+    "array-element-newline": ["warn", { "minItems": 3 }], // TODO: change to min items xxx,
     "block-spacing": ["error", "always"],
     "brace-style": "error",
     "camelcase": "error",
@@ -113,15 +113,10 @@ module.exports = {
     "func-names": ["error", "as-needed"],
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
     "function-paren-newline": ["error", { "minItems": 5 }],
-    "id-blacklist": ["error", "data", "err", "e", "cb", "callback"],
-    "id-length": ["error", { "min": 3, "max": 20, "exceptions": ["fs"] }],
+    "id-length": ["error", { "min": 3, "max": 25, "exceptions": ["fs"] }],
     "implicit-arrow-linebreak": ["error", "beside"],
     "indent": ["error", 2, {
       "SwitchCase": 1,
-      "VariableDeclarator": "first",
-      "FunctionExpression": {"parameters": "first"},
-      "FunctionDeclaration": {"parameters": "first"},
-      "CallExpression": {"arguments": "first"}
     }],
     "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": "error",
@@ -129,7 +124,7 @@ module.exports = {
     "linebreak-style": "error",
     "lines-between-class-members": "error",
     "max-depth": "error",
-    "max-len": "error",
+    "max-len": ["warn", 90],
     "max-nested-callbacks": ["error", 3],
     "max-params": "error",
     "max-statements-per-line": "error",
