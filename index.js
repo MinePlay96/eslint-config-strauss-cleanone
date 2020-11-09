@@ -113,7 +113,7 @@ module.exports = {
     "func-names": ["error", "as-needed"],
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
     "function-paren-newline": ["error", { "minItems": 5 }],
-    "id-length": ["error", { "min": 3, "max": 25, "exceptions": ["fs"] }],
+    "id-length": ["error", { "min": 2, "max": 25 }],
     "implicit-arrow-linebreak": ["error", "beside"],
     "indent": ["error", 2, {
       "SwitchCase": 1,
@@ -122,7 +122,7 @@ module.exports = {
     "key-spacing": "error",
     "keyword-spacing": "error",
     "linebreak-style": "error",
-    "lines-between-class-members": "error",
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
     "max-depth": "error",
     "max-len": ["warn", 90],
     "max-nested-callbacks": ["error", 3],
