@@ -117,6 +117,10 @@ module.exports = {
     "implicit-arrow-linebreak": ["error", "beside"],
     "indent": ["error", 2, {
       "SwitchCase": 1,
+      "FunctionDeclaration": {"body": 1, "parameters": 2},
+      "FunctionExpression": {"body": 1, "parameters": 2},
+      "CallExpression": {"arguments": 1},
+      "ArrayExpression": 1
     }],
     "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": "error",
