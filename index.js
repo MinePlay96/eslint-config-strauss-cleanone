@@ -48,7 +48,8 @@ module.exports = {
     "no-loop-func": "error",
     "no-magic-numbers": ["error", { 
       "enforceConst": true, 
-      "detectObjects": true 
+      "detectObjects": true,
+      "ignore": [0, 1]
     }], // TODO: check: Mayby overkill? but butiful 
     "no-multi-spaces": ["error", { exceptions: { Property: true, VariableDeclarator: true, ImportDeclaration: true}}],
     "no-multi-str": "error",
@@ -117,13 +118,22 @@ module.exports = {
     "implicit-arrow-linebreak": ["error", "beside"],
     "indent": ["error", 2, {
       "SwitchCase": 1,
-      "FunctionDeclaration": {"body": 1, "parameters": 2},
-      "FunctionExpression": {"body": 1, "parameters": 2},
-      "CallExpression": {"arguments": 1},
-      "ArrayExpression": 1
+      "VariableDeclarator": "first",
+      "outerIIFEBody": 1,
+      "MemberExpression": 1,
+      "FunctionDeclaration": { "parameters": 2, "body": 1 },
+      "FunctionExpression": { "parameters": 2, "body": 1 },
+      "CallExpression": { "arguments": 1 },
+      "ArrayExpression": 1,
+      "ObjectExpression": 1,
+      "ImportDeclaration": 1,
+      "flatTernaryExpressions": false,
+      "ignoreComments": false,
+      "ignoredNodes": ["TemplateLiteral *", "JSXElement", "JSXElement > *", "JSXAttribute", "JSXIdentifier", "JSXNamespacedName", "JSXMemberExpression", "JSXSpreadAttribute", "JSXExpressionContainer", "JSXOpeningElement", "JSXClosingElement", "JSXFragment", "JSXOpeningFragment", "JSXClosingFragment", "JSXText", "JSXEmptyExpression", "JSXSpreadChild"],
+      "offsetTernaryExpressions": true
     }],
     "jsx-quotes": ["error", "prefer-double"],
-    "key-spacing": "error",
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
     "keyword-spacing": "error",
     "linebreak-style": "error",
     "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
@@ -177,7 +187,6 @@ module.exports = {
     "semi": ["error", "always", { "omitLastInOneLineBlock": true}],
     "semi-spacing": ["error", {"before": false, "after": true}],
     "semi-style": ["error", "last"],
-    "sort-keys": "error",
     "sort-vars": "error",
     "space-before-blocks": "error",
     "space-before-function-paren": ["error", "never"],
