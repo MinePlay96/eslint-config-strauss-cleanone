@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-strauss-cleanone",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "a eslint configuration",
   "main": "index.js",
   "scripts": {
