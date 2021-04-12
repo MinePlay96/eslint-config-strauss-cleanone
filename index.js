@@ -113,7 +113,7 @@ module.exports = {
     "func-name-matching": "error",
     "func-names": ["error", "as-needed"],
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
-    "function-paren-newline": ["error"],
+    "function-paren-newline": ["error", "multiline-arguments"],
     "id-length": ["error", { "min": 2, "max": 25 }],
     "implicit-arrow-linebreak": ["error", "beside"],
     "indent": ["error", 2, {
