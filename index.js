@@ -138,7 +138,7 @@ module.exports = {
     "linebreak-style": "error",
     "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
     "max-depth": "error",
-    "max-len": ["warn", 90, "ignoreComments": true],
+    "max-len": ["warn", 90, {"ignoreComments": true}],
     "max-nested-callbacks": ["error", 3],
     "max-params": "error",
     "max-statements-per-line": "error",
